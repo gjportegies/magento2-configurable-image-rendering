@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Block\Product\View\Gallery">
+        <plugin name="Gallery_update_image" type="SR\ConfigurableImageRendering\Plugin\GalleryPlugin" sortOrder="1"/>
+    </type>
+    <type name="Magento\Catalog\Block\Product\ImageBuilder">
+        <plugin name="ImageBuilder_set_product" type="SR\ConfigurableImageRendering\Plugin\ImageBuilderPlugin" sortOrder="1" />
+    </type>
+</config>
